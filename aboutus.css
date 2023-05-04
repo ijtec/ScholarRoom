@@ -97,9 +97,6 @@ margin-top: 2%;
 padding-right: 5%;
 
 }
-
-
-
 .firsttxt{
 width: 100%;
 font-family:'daxlinepro-light' ;
@@ -198,12 +195,60 @@ width: 40%;
 position: relative;
 }
 
+.itworks{
+background-color:rgba(81, 221, 17, 0.13);
+}
+
+.itworkstxt{
+width: 50%;
+}
+
+.itworks img{
+width: 50%;
+margin-left: 27%;
+margin-top: 10%;
+position: relative;
+}
+
+.itworkstxt h4{
+position: relative;
+width: 332px;
+height: 60px;
+font-family:'daxlinepro-light';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+color: #383838;
+left: 70%;
+top: 85px;
+}
+
+.itworkstxt p{
+width: 362px;
+height: 24px;
+font-family:'daxlinepro-light';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+color: #383838;
+margin-left: 69%;
+margin-top: 20%;
+}
 
 
+iframe{
+align-items: center;
+margin-right: 10%;
+position: relative;
+bottom: 198px;
+left: 51%;
+transform: translate(-50%,-50%);
+}
 
-
-
-
+ .demolink{
+ }
 
 
 /* footer */

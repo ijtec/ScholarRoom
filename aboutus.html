@@ -5,15 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="aboutus.css" />
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Work+Sans:wght@200;300&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet"> -->
+    <script src="https://kit.fontawesome.com/1e252d778c.js"crossorigin="anonymous"></script>
     <title>Document</title>
   </head>
   <body>
@@ -64,10 +56,31 @@
       </div>
 
       <div class="itworks">
-        <h4></h4>
-        <p></p>
-        <img src="./Images/Frame 2.png" alt="" />
+        <div class="itworkstxt">
+        <h4>HOW IT WORKS?</h4>
+        <P>Watch a demo to see how our software works</P>
       </div>
+      <div class="demolink">
+        <img src="./Images/laptopframe.png" alt=""id="imageAsset"/>
+        <iframe width="290" height="165" src="https://www.youtube.com/embed/ZQCQINjHICc" 
+      title="YouTube video player" 
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+       gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+      </div>
+      <script>
+      function playVideo() {
+      var playBtn = document.getElementById("playButton");
+       var assetImage = document.getElementById("imageAsset")
+      if (playBtn.style.display === "none") {
+      playBtn.style.display = "block";
+       assetImage.style.display = "block";
+      } else {
+      playBtn.style.display = "none";
+      assetImage.style.display = "none";
+      }
+      }
+      
+</script>
     </section>
 
     <footer>
