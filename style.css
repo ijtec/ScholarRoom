@@ -44,16 +44,16 @@ font-family: 'daxlinepro-light';
 }
 
 header .navigation a:not(:last-child){
-margin-right: 30px;
+margin-right: 40px;
 } 
 
 .navigation{
-   width: 55%;
+   width: 40%;
 }
 
-header .navigation a:hover{
+/* header .navigation a:hover{
 color: green;
-}
+} */
 
 .logo{
 width: 233.75px;
@@ -76,37 +76,43 @@ border-radius: 5px;
 border: none;
 line-height:22px ;
 font-family:'daxlinepro-light';
-margin-left: 2%;
+/* margin-left: 30%; */
+ margin-left: 2%;
 }
 
 .navbutton:hover{
 color: green;
 } 
 
-
-/* .overlay {
-   position: fixed; 
+.hamburger{
    display: none;
+}
+
+.check{
+   display: none;
+}
+
+.overlay {
+   position: absolute; 
    width: 100%; 
    height: 100%; 
-   top: 0;
+   top: 85px;
    left: 0;
    right: 0;
    bottom: 0;
-   background-color: rgba(0,0,0,0.5); 
-   z-index: 2; 
+   background-color:rgba(0, 0, 0, 0.49);
    cursor: pointer; 
- } */
+ }
 
 .content{
 width:100%;
 height: 100vh;
-background: url(./Images/woman.png);
+background-image: url(./Images/woman.png);
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
-} 
 
+} 
 
 .content .info h2{
 width:70% ;
@@ -421,7 +427,7 @@ background-color: #ffffff;
 
 .phonecontainer .phonediv h3{
 color: #535252;
-font-family:'Inter' ;
+font-family:'daxlinepro-light';
 font-style: normal;
 font-weight: 700;
 font-size: 36px;
@@ -738,6 +744,12 @@ transform: translateX(30%);
 transition: all 1s;
 } */
 
+#slidediv2{
+   z-index: -99;
+   display:none ;
+}
+
+
 .slideone p,.slidetwo p,.slidethree p{
 width: 285px;
 font-family:'daxlinepro-light';
@@ -779,6 +791,7 @@ background-color: #ffffff;
 height: 70%;
 justify-content: space-around;
 align-items: center;
+transition: transform 0.5s ease;
 }
 
 .arrowleft{
@@ -790,6 +803,16 @@ display: flex;
 flex-direction: center;
 align-items: center;
 justify-content: space-around;
+}
+
+#buttonleft{
+   border: none;
+   background: none;
+}
+
+#buttonright{
+   border: none;
+   background: none;
 }
 
 
@@ -828,10 +851,11 @@ height: 85px;
 }
 
 .secondlanediv{
-display: flex;
+display:flex ;
 height: 70%;
 justify-content: space-around;
 align-items: center;
+/* margin-top: 5%; */
 }
 
 .footerline{
@@ -889,13 +913,22 @@ color: #FFFFFF;
 margin-left:15%;
 }
 
+.secondlanediv{
+   margin-left: 9%;
+}
+ 
  .accradiv{
-margin-left: 30%; 
+margin-left: 9%; 
 } 
 
+.secondlanediv{
+   margin-right: -5.5%;
+}
+
+
 .sierraleonediv{
-margin-right: 10%;
-}  
+margin-right: -5.5%;
+}   
 
 /* .lanediv{
    display: flex;
@@ -944,10 +977,10 @@ justify-content: space-around;
 }
 
 .smdiv{
-width: 40%;
+width: 20%;
 display: flex;
-justify-content: space-between;
-padding: 1%;
+justify-content: space-around;
+padding: 0%;
 /* margin-right: 5%; */
 } 
 
@@ -957,4 +990,126 @@ font-style: normal;
 font-weight: 500;
 font-size: 14px;
 color: #FFFFFF;
+margin-left: 80%;
+}
+
+/* .socialmediadiv{
+   background-color: purple;
+   display: flex;
+   flex-direction: column;
+   
+   justify-content: space-between;
+
+} */
+
+
+
+
+/* Media Query */ 
+/* Media Query */
+/* Media Query */
+
+@media screen and (max-width:800px){
+   .hamburger {
+      display: inline-block;
+  }
+  .check {
+    display: none;
+  }
+  .hamburger i{
+      font-size: 2rem;
+      color:black;
+      transform: .3s;
+  }
+  .navigation{
+      position:fixed;
+      top: 0;
+      left: 0;
+      width: 30%;
+      height: 60%;
+      display: flex;
+      flex-direction: column;
+      color:#ffffff;
+      background-color: white;
+      padding: 2rem ;
+      transform: translateX(-150%);
+      z-index: 11;
+      transition: all .5s;
+      margin-top: 4.5rem;
+
+  }
+
+  .navigation a{
+   margin: 1.5rem;
+   border-bottom:1px solid #51DD11;
+   padding-bottom:1rem ;
+}
+.navigation a{
+   color: var(--white);
+   transition: all .3s;
+
+}
+.navigation a:hover{
+   margin: 1rem;
+   background-color: transparent;
+   color:#e5e2f9;
+
+
+}
+
+.navbutton{
+   align-items: center;
+}
+
+.navigation a::before{
+display: none;
+}
+.navigation::after{
+display: none;
+}
+
+/* SLIDE MENU WHEN THE HAMBURGER IS CLICKED */
+#toggle:checked ~ .navigation {
+   transform: translate(0);
+}
+
+#toggle:checked ~ .hamburger i {
+border: 1px solid black;
+padding: .5rem;
+border-radius: 5px;
+transition: .5s;
+
+}
+   .navigation {
+       text-align: center;
+   }
+   a {
+       text-align: center;
+       margin-left: 1rem;
+       font-size: .6rem;
+   }
+
+.logo{
+   width: 40%;
+}
+
+.textforslider{
+   display: flex;
+   flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

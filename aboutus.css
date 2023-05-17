@@ -50,6 +50,7 @@ font-family:'daxlinepro-light' ;
    
 header .navigation a:not(:last-child){
 margin-right: 30px;
+/* margin-right: 40px; */
 } 
 
 header .navigation a:hover{
@@ -57,7 +58,7 @@ color: green;
 }
 
 .navigation{
-   width: 55%;
+   width: 44%;
 }
 
 .logo{
@@ -390,11 +391,12 @@ footer{
    }
    
    .smdiv{
-   width: 40%;
+   width: 20%;
    display: flex;
    justify-content: space-between;
-   padding: 1%;
+   /* padding: 1%; */
    /* margin-right: 5%; */
+   padding: 0%;
    } 
    
    .copyrightdiv{
@@ -403,5 +405,6 @@ footer{
    font-weight: 500;
    font-size: 14px;
    color: #FFFFFF;
+   margin-left: 80%;
    }
    

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/1e252d778c.js"crossorigin="anonymous"></script>
     
     <title>Scholar room</title>
   </head>
@@ -12,19 +13,23 @@
     <section>
       <header>
         <img class="logo" src="./Images/logo.png" alt="logo" />
+        <input type="checkbox" class="check" id="toggle" />
+          <label for="toggle" class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+
         <div class="navigation">
           <a href="aboutus.html">About</a>
           <a href="#">Blog</a>
           <a href="#">Contact</a>
           <a href="#">FAQ</a>
-          <a href="#">Product</a>
-          <a href="#">Careers</a>
           <button class="navbutton">Join us</button>
         </div>
         </header>
-        <div class="overlay"></div>
-      <div class="content">
+        
+      <div id="content" class="content">
         <div class="info">
+          <div class="overlay">
           <h2>
             Discover And Explore E- learning Solution Link Like Never Before
           </h2>
@@ -33,6 +38,7 @@
             online
           </p>
           <a href="#" class="info-btn">Join us</a>
+        </div>
         </div>
       </div>
 
@@ -189,11 +195,13 @@
                         <h5>LATEST ARTICLE</h5>
                         <h4>Read Latest Updates</h4>
                       </div>
-
-                      <div class="slidediv">
-                        <div class="arrowleft">
-                          <img src="./Images/left.png" alt="" srcset=""></div>
-                         <div class="slideone">
+                      <div class="slider">
+                      <div id="slidediv1" class="slidediv">
+                        <button id="buttonleft" onclick="arrowLeft()"> <div id="arrowleft" class="arrowleft">
+                          <img src="./Images/left.png" alt="" srcset="">
+                        </div></button>
+                         
+                          <div class="slideone">
                         <img src="./Images/girlsreading.png" alt="" srcset="">
                         <h5>E-learning the new wave</h5>
                         <p> it is true that eLearning has come to stay and our desire as a learning institution has been fulfilled knowing we can deliver to our students from anywhere all year round and thanks to scholarRoom.</p>
@@ -217,10 +225,44 @@
                     <a href="#" class="read">Read more</a>
                   </div>
                   
-                  <div class="rightarrow"><img src="./Images/right.png" alt="" srcset=""></div>
-                    
+               <button id="buttonright" onclick="arrowRight()">
+                <div id="rightarrow" class="rightarrow"><img src="./Images/right.png" alt="" srcset=""></div></button>
+                </div>
 
+
+                <div id="slidediv2" class="slidediv">
+                  <div class="arrowleft">
+                    <img src="./Images/left.png" alt="" srcset="">
+                  </div>
+                   
+                    <div class="slideone">
+                  <img src="./Images/girlsreading.png" alt="" srcset="">
+                  <h5>E-learning the new wave</h5>
+                  <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut nam repellat est, sed nobis ratione facere suscipit magnam laboriosam quas!</p>
+                  <a href="#" class="read">Read more</a>
+                </div>
+                
+              
+
+                <div class="slidetwo">
+                <img src="./Images/smilingman.png" alt="" srcset="">
+                <h5>How to teach effectively online</h5>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta rerum neque quisquam possimus similique aspernatur corporis reiciendis delectus quia expedita?</p>
+                <a href="#" class="read">Read more</a>
               </div>
+          
+
+            <div class="slidethree">
+              <img src="./Images/handgesture.png" alt="" srcset="">
+              <h5>Student coping mechanism</h5>
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa consequatur sunt omnis alias officia placeat magnam! Consequatur recusandae harum consequuntur?.</p>
+              <a href="#" class="read">Read more</a>
+            </div>
+            
+            <div class="rightarrow"><img src="./Images/right.png" alt="" srcset=""></div>
+          </div>
+        </div>
+
               <!-- <div class="carosel"></div> -->
                    </section>
 
@@ -228,7 +270,7 @@
                     <!-- firstdiv -->
                     <div class="logoandtext">
                       <div class="logoimg">
-                        <img src="./Images/logo.png" alt="" srcset="">
+                        <img src="./Images/footerlogo.png" alt="" srcset="">
                         <p>Creating innovative, high-quality elearning experience is easier with ScholarRoom</p></div>
                       
                         <div class="lagos">
@@ -280,6 +322,14 @@
                       </p>
                       </div>
               
+                      <div class="">
+                        <h4 class="">Info</h4>
+                        <h4 class="">About</h4>
+                        <h4 class="">Blog</h4>
+                        <h4 class="">FAQ</h4>
+                        <h4 class="">Contact us
+                        </h4>
+                      </div>
                       
                       <div class="sierraleonediv">
                         <h4>Sierra Leone Office</h4>
@@ -290,11 +340,11 @@
                           </p>
                   
                           <div class="footerarrowup">
-                            <img src="./Images/up.png" alt="" srcset=""> </div>
+                           <a href="#content"> <img src="./Images/up.png" alt="" srcset=""> </div></a>
                           </div>
 
 
-                      <div class="smdiv">
+                      <!-- <div class="smdiv">
                         <div class="facebookdiv">
                           <img src="./Images/facebook.svg" alt="" srcset="">
                         </div>
@@ -308,7 +358,7 @@
                           <img src="./Images/pintrest.png" alt="" srcset="">
                         </div>
                         </div>
-              
+               -->
                     <!-- <div class="">
                       <h4 class="">Info</h4>
                       <h4 class="">About</h4>
@@ -316,8 +366,8 @@
                       <h4 class="">FAQ</h4>
                       <h4 class="">Contact us
                       </h4>
-                    </div> -->
-              
+                    </div>
+               -->
                     
                     </div>
                     </div>
@@ -327,7 +377,7 @@
               
                     <!-- forthdiv -->
                     <div class="socialmediadiv">
-                      <!-- <div class="smdiv">
+                      <div class="smdiv">
                       <div class="facebookdiv">
                         <img src="./Images/facebook.svg" alt="" srcset="">
                       </div>
@@ -340,13 +390,89 @@
                       <div class="pintrestdiv">
                         <img src="./Images/pintrest.png" alt="" srcset="">
                       </div>
-                      </div> -->
+                      </div>
                       <div class="copyrightdiv">
                          &copy;Copyright 2022 by Vatebra.com
                       </div>
                     </div>
                   </footer>
               
+
+
+
+                  
+
+                   <script>
+                    
+
+
+                  // arrowRight.addEventListener("click,openSlide2")
+                    document.addEventListener('DOMContentLoaded',function () {
+                    const slideDiv1=document.getElementById('slidediv1')
+                    const slideDiv2=document.getElementById('slidediv2')
+                    const arrowLeft=document.getElementById('arrowleft')
+                    const arrowRight=document.getElementById('arrowright')
+
+                    function openslideDiv2() {
+                    if (slideDiv2.style.display=="none")
+                    {
+                      slideDiv2.style.display="flex";
+                      slideDiv1.style.display = "none"
+                    }
+                  }
+                  function openslideDiv1() {
+                    if (slideDiv1.style.display=="none")
+                    {
+                      slideDiv1.style.display="flex";
+                      slideDiv2.style.display = "none"
+                    }
+                  }
+
+                    arrowLeft.addEventListener('click', slideLeft);
+                    arrowRight.addEventListener('click', slideRight); });
+                  </script>
+
+                  <!-- <script> 
+
+                  //  document.addEventListener('DOMContentLoaded',function () {
+                  //   const arrowLeft = document.getElementById('arrowleft');
+                  //   const arrowRight = document.getElementById('arrowright'); 
+                  //   const slider1 = document.getElementById('slidediv1'); 
+                  //   const slider2 = document.getElementById('slidediv2'); 
+                  //   function slideLeft() { slider1.style.display = 'none'; slider2.style.display = 'block'; } 
+                  //   function slideRight() { slider1.style.display = 'block'; slider2.style.display = 'none'; } 
+                  //   arrowLeft.addEventListener('click', slideLeft);
+                  //   arrowRight.addEventListener('click', slideRight); }); 
+                  
+                  </script> -->
+
+                  <!-- <script>
+                   document.addEventListener('DOMContentLoaded', function () { 
+                    const arrowLeft = document.getElementById('buttonLeft'); 
+                    const arrowRight = document.getElementById('buttonRight'); 
+                    const slider = document.querySelector('.slider'); 
+                    const slideWidth = slider.clientWidth; 
+                    let currentSlide = 0; 
+                    function slideLeft() { 
+                      currentSlide--; 
+                      if (currentSlide < 0) { 
+                        currentSlide = slider.children.length - 1; 
+                      } 
+                      slider.style.transform = `translateX(-${currentSlide * slideWidth}px)`; 
+                    } function slideRight() 
+                    { currentSlide++; 
+                      if (currentSlide >= slider.children.length) { currentSlide = 0; } 
+                      slider.style.transform = `translateX(-${currentSlide * slideWidth}px)`; } 
+                      arrowLeft.addEventListener('click', slideLeft); 
+                      arrowRight.addEventListener('click', slideRight); });
+                    </script>
+ -->
+
+
+
+
+
+
 
   </body>
   
