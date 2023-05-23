@@ -20,7 +20,7 @@
 
         <div class="navigation">
           <a href="aboutus.html">About</a>
-          <a href="#">Blog</a>
+          <a href="#articlecontainer">Blog</a>
           <a href="#">Contact</a>
           <a href="#">FAQ</a>
           <button class="navbutton">Join us</button>
@@ -190,18 +190,18 @@
                     
                     </div>
 
-                    <div class="articlecontainer"></a>
+                    <div id="articlecontainer" class="articlecontainer">
                       <div class="txtcontainer"> 
                         <h5>LATEST ARTICLE</h5>
                         <h4>Read Latest Updates</h4>
                       </div>
                       <div class="slider">
-                      <div id="slidediv1" class="slidediv">
-                        
                         <button id="buttonleft"> 
                           <div id="arrowleft" class="arrowleft"> <img src="./Images/left.png" alt="" srcset="">
                         </div></button>
-                         
+                      <div id="slidediv1" class="slidediv">
+                        
+                
                           <div class="slideone">
                         <img src="./Images/girlsreading.png" alt="" srcset="">
                         <h5>E-learning the new wave</h5>
@@ -225,16 +225,11 @@
                     <p> it is true that eLearning has come to stay and our desire as a learning institution has been fulfilled knowing we can deliver to our students from anywhere all year round thanks to scholarRoom.</p>
                     <a href="#" class="read">Read more</a>
                   </div>
-                  
-               <button id="buttonright">
-                <div id="rightarrow" class="rightarrow"><img src="./Images/right.png" alt="" srcset=""></div></button>
+                
                 </div>
 
 
                 <div id="slidediv2" class="slidediv">
-                  <div class="arrowleft">
-                    <img src="./Images/left.png" alt="" srcset="">
-                  </div>
                    
                     <div class="slideone">
                   <img src="./Images/girlsreading.png" alt="" srcset="">
@@ -260,7 +255,9 @@
               <a href="#" class="read">Read more</a>
             </div>
             
-            <div class="rightarrow"><img src="./Images/right.png" alt="" srcset=""></div>
+              </div>
+              <button id="buttonright">
+                <div id="rightarrow" class="rightarrow"><img src="./Images/right.png" alt="" srcset=""></div></button>
           </div>
         </div>
 
@@ -323,7 +320,7 @@
                       </p>
                       </div>
               
-                      <div class="">
+                      <div class="contactusdiv">
                         <h4 class="">Info</h4>
                         <h4 class="">About</h4>
                         <h4 class="">Blog</h4>
@@ -371,7 +368,7 @@
                -->
                     
                     </div>
-                    </div>
+                  
               
                     <!-- thriddiv -->
                     <div class="footerline"></div>
@@ -405,9 +402,6 @@
 
                    <script>
                     
-
-
-                  // arrowRight.addEventListener("click,openSlide2")
                     document.addEventListener('DOMContentLoaded',function () {
                     const slideDiv1=document.getElementById('slidediv1')
                     const slideDiv2=document.getElementById('slidediv2')
@@ -435,46 +429,6 @@
                     
                   });
                   </script>
-
-                  <!-- <script> 
-
-                  //  document.addEventListener('DOMContentLoaded',function () {
-                  //   const arrowLeft = document.getElementById('arrowleft');
-                  //   const arrowRight = document.getElementById('arrowright'); 
-                  //   const slider1 = document.getElementById('slidediv1'); 
-                  //   const slider2 = document.getElementById('slidediv2'); 
-                  //   function slideLeft() { slider1.style.display = 'none'; slider2.style.display = 'block'; } 
-                  //   function slideRight() { slider1.style.display = 'block'; slider2.style.display = 'none'; } 
-                  //   arrowLeft.addEventListener('click', slideLeft);
-                  //   arrowRight.addEventListener('click', slideRight); }); 
-                  
-                  </script> -->
-
-                  <!-- <script>
-                   document.addEventListener('DOMContentLoaded', function () { 
-                    const arrowLeft = document.getElementById('buttonLeft'); 
-                    const arrowRight = document.getElementById('buttonRight'); 
-                    const slider = document.querySelector('.slider'); 
-                    const slideWidth = slider.clientWidth; 
-                    let currentSlide = 0; 
-                    function slideLeft() { 
-                      currentSlide--; 
-                      if (currentSlide < 0) { 
-                        currentSlide = slider.children.length - 1; 
-                      } 
-                      slider.style.transform = `translateX(-${currentSlide * slideWidth}px)`; 
-                    } function slideRight() 
-                    { currentSlide++; 
-                      if (currentSlide >= slider.children.length) { currentSlide = 0; } 
-                      slider.style.transform = `translateX(-${currentSlide * slideWidth}px)`; } 
-                      arrowLeft.addEventListener('click', slideLeft); 
-                      arrowRight.addEventListener('click', slideRight); });
-                    </script>
- -->
-
-
-
-
 
 
 

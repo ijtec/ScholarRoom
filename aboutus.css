@@ -61,6 +61,14 @@ color: green;
    width: 44%;
 }
 
+.hamburger{
+   display: none;
+}
+
+.check{
+   display: none;
+}
+
 .logo{
    width: 233.75px;
    height: 85px;
@@ -275,10 +283,13 @@ footer{
    }
    
    .secondlanediv{
-   display: flex;
+   display:flex ;
    height: 70%;
-   justify-content: space-around;
+   justify-content: space-between;
    align-items: center;
+   width: 73%;
+   align-self: flex-end;
+   /* margin-top: 5%; */
    }
    
    .footerline{
@@ -336,14 +347,6 @@ footer{
    margin-left:15%;
    }
    
-    .accradiv{
-   margin-left: 30%; 
-   } 
-   
-   .sierraleonediv{
-   margin-right: 10%;
-   }  
-   
    /* .lanediv{
       display: flex;
       flex-direction: column;
@@ -393,10 +396,9 @@ footer{
    .smdiv{
    width: 20%;
    display: flex;
-   justify-content: space-between;
-   /* padding: 1%; */
-   /* margin-right: 5%; */
+   justify-content: space-around;
    padding: 0%;
+   /* margin-right: 5%; */
    } 
    
    .copyrightdiv{
@@ -405,6 +407,143 @@ footer{
    font-weight: 500;
    font-size: 14px;
    color: #FFFFFF;
-   margin-left: 80%;
+   display: flex;
+   align-items: center;
    }
    
+   .socialmediadiv{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2%;
+   
+   } 
+   
+
+
+/* Media Query */ 
+/* Media Query */
+/* Media Query */
+
+@media screen and (max-width:800px){
+   .hamburger {
+      display: inline-block;
+  }
+  .check {
+    display: none;
+  }
+  .hamburger i{
+      font-size: 2rem;
+      color:black;
+      transform: .3s;
+  }
+  .navigation{
+      position:fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      color:#ffffff;
+      background-color: white;
+      padding: 2rem ;
+      transform: translateX(100%);
+      z-index: 11;
+      transition: all .5s;
+      margin-top: 4.5rem;
+
+  }
+
+  .navigation a{
+   margin: 1.5rem;
+   border-bottom:1px solid #51DD11;
+   padding-bottom:1rem ;
+}
+.navigation a{
+   color: var(--white);
+   transition: all .3s;
+
+}
+.navigation a:hover{
+   margin: 1rem;
+   background-color: transparent;
+   color:#e5e2f9;
+
+
+}
+
+.navbutton{
+   align-self: center;
+}
+
+.navigation a::before{
+display: none;
+}
+.navigation::after{
+display: none;
+}
+
+/* SLIDE MENU WHEN THE HAMBURGER IS CLICKED */
+#toggle:checked ~ .navigation {
+   transform: translate(0);
+}
+
+#toggle:checked ~ .hamburger i {
+border: 1px solid black;
+padding: .5rem;
+border-radius: 5px;
+transition: .5s;
+
+}
+   .navigation {
+       text-align: center;
+   }
+   a {
+       text-align: center;
+       margin-left: 1rem;
+       font-size: .6rem;
+   }
+
+.logo{
+   width: 40%;
+}
+
+.textforslider{
+   display: flex;
+   flex-direction: column;
+}
+
+.logoandtext{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+
+}
+footer{
+   height: auto;
+}
+
+
+.secondlanediv{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   width: 100%;
+   padding-left: 10%;
+}
+
+.abujadiv,.nairobidiv,.contactusdiv,.sierraleonediv{
+   margin-top: 9% ;
+}
+
+.lagos,.abujadiv,.nairobidiv{
+   margin-left: 10%;
+}
+
+.smdiv{
+   width: 50%;
+}
+
+}
