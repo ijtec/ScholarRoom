@@ -1,5 +1,5 @@
 @font-face{
-font-family:'daxlinepro-light' ;
+font-family:'daxlinepro-light';
 src: url(Font/daxlinepro-light.ttf);
 }
 
@@ -447,6 +447,7 @@ margin-top: 5%;
 .bookcontainer{
 display: flex;
 height: 80vh;
+background-color:#004A00;
 }
 
 .bookdiv{
@@ -455,8 +456,8 @@ flex-direction: column;
 justify-content: center;
 width: 45%;
 padding: 0% 4%;
-background-color: rgba(255, 255, 255, 0.53);
-box-shadow: 0px 16px 40px rgba(117, 142, 254, 0.25);
+/* background-color: rgba(255, 255, 255, 0.53); */
+/* box-shadow: 0px 16px 40px rgba(117, 142, 254, 0.25); */
 }
 
 .bookimg{
@@ -469,16 +470,135 @@ height: 100%;
 transition: all 3s;
 }
 
+.linecontainerplan{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+margin-top: 5%;
+
+}  
+
+.linetwoplan{
+   height:2px;
+   width:10%;
+   background-color:#51DD11;
+   margin-top: 2.5%;
+}
+
+.chooseplan{
+height: 100vh;
+
+}
+
+
+.sassb2bdiv{
+display: flex;
+justify-content: space-around;
+}
+
+.startbtn{
+color:white ;
+background: #51DD11 ;
+text-decoration: none;
+border-radius: 5px;
+width: 160px;
+height: 40px;
+border: none;
+margin-top: 15%;
+margin-left: 30%;
+}
+
+.startbtn:hover{
+background-color: green;
+}
+
+.getbtn:hover{
+   background-color: green;
+}
+
+.getbtn{
+color:white ;
+background: #51DD11 ;
+text-decoration: none;
+font-weight: 700;
+border-radius: 5px;
+width: 160px;
+height: 40px;
+border: none;
+margin-top: 33%;
+margin-left: 30%;
+}
+
+
+.sass{
+width: 30%;
+height: 65vh;
+border-radius: 10px;
+padding: 5px;
+box-shadow: 0px 16px 40px rgba(117, 142, 254, 0.25);
+margin-left: 15%;
+margin-top: 5%;
+
+}
+
+#sassh4{
+   font-size: 20px;
+   margin-left: 15%;
+   margin-top: 20%;
+   font-weight: 900;
+}
+
+.sasstext{
+margin-left:15% ;
+margin-top: 5% ;
+}
+
+#saastxt{
+margin-top: 5% ;
+}
+
+.sass:hover,.B2b:hover{
+   border: 1px solid #004A00;
+}
+
+#b2btxt{
+   margin-top: 5%;
+   margin-left:15% 
+}
+
+.B2b{
+width: 30%;
+height: 65vh;
+border-radius: 10px;
+padding: 5px;
+box-shadow: 0px 16px 40px rgba(117, 142, 254, 0.25);
+margin-right: 15%;
+margin-top: 5%;
+} 
+
+#B2bh4{
+font-size: 20px;
+margin-left: 15%;
+margin-top: 20%;
+font-weight: 900;
+}
+
+
+
+
+
 .libtxt{
-color: #383838;
+color: #ffffff;
 font-family:'daxlinepro-light';
 font-style: normal;
 font-weight: 700;
 font-size: 36px;
 line-height: 54px; 
 }
+
 .libtext{
-color: #535252;
+color: #ffffff;
 font-family:'daxlinepro-light';
 font-style: normal;
 font-weight: 400;
@@ -1044,7 +1164,8 @@ align-items: center;
 }
 
 .navbutton{
-   align-self: center;
+   /* align-self: center; */
+   margin: 0.5rem;
 }
 
 .navigation a::before{
@@ -1090,6 +1211,8 @@ transition: .5s;
    align-items: flex-start;
 
 }
+
+/* footer */
 footer{
    height: auto;
 }
