@@ -476,19 +476,17 @@ justify-content: center;
 align-items: center;
 flex-direction: column;
 margin-top: 5%;
-
 }  
 
 .linetwoplan{
-   height:2px;
-   width:10%;
-   background-color:#51DD11;
-   margin-top: 2.5%;
+height:2px;
+width:10%;
+background-color:#51DD11;
+margin-top: 2.5%;
 }
 
 .chooseplan{
 height: 100vh;
-
 }
 
 
@@ -584,10 +582,6 @@ margin-top: 20%;
 font-weight: 900;
 }
 
-
-
-
-
 .libtxt{
 color: #ffffff;
 font-family:'daxlinepro-light';
@@ -624,7 +618,6 @@ margin-top: 5%;
 .cloudbtn:hover{
 background: green;
 }
-
 
 .slider{
 overflow: hidden;
@@ -680,7 +673,6 @@ align-items: center;
    background-color: #004A00;
    height: 100vh;
 }
-
 
 .ogbonnatxt{
 display: flex;
@@ -1126,24 +1118,24 @@ align-items: center;
       color:black;
       transform: .3s;
   }
-  .navigation{
-      position:fixed;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      width: 25%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      color:#ffffff;
-      background-color: white;
-      padding: 0.2rem ;
-      transform: translateX(100%);
-      z-index: 11;
-      transition: all .5s;
-      margin-top: 4.5rem;
+.navigation{
+position:fixed;
+top: 0;
+right: 0;
+bottom: 0;
+width: 25%;
+height: 100%;
+display: flex;
+flex-direction: column;
+color:#ffffff;
+background-color: white;
+padding: 0.2rem ;
+transform: translateX(100%);
+z-index: 11;
+transition: all .5s;
+margin-top: 4.5rem;
 
-  }
+}
 
   .navigation a{
    margin: 0.5rem;
