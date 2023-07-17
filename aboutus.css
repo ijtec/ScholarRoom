@@ -1,7 +1,27 @@
 @font-face{
-   font-family:'daxlinepro-light' ;
-   src: url(Font/daxlinepro-light.ttf);
-   }
+font-family:'daxlinepro-light' ;
+src: url(Font/daxlinepro-light.ttf);
+}
+
+@font-face{
+font-family:'DaxlinePro-Bold.ttf';   
+src: url(Font/DaxlinePro-Bold.ttf);
+}
+
+@font-face{
+font-family:'DaxlinePro-Medium.ttf';   
+src: url(Font/DaxlinePro-Medium.ttf);
+}
+
+@font-face{
+font-family:'DaxlinePro-Regular.ttf';   
+src: url(Font/DaxlinePro-Regular.ttf);
+}
+
+@font-face{
+font-family:'daxlinepro-extrabold.ttf';
+src: url(Font/daxlinepro-extrabold.ttf);
+}
 
 
 *{
@@ -12,20 +32,17 @@
 } 
 
 body{
-   overflow-x:  hidden;
-   font-family: 'daxlinepro-light';
- }
+overflow-x:  hidden;
+font-family: 'daxlinepro-light';
+}
 
-.aboutcontainer{
-width: 100%;
-height: 50vh;
-display: flex;
-flex-direction: column;
-justify-content: flex-start;  
-background-image: url(./Images/Aboutus.png);
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+.aboutcontainer h2{
+color: #ffffff;
+position: relative;
+bottom: 250px;
+font-family:'DaxlinePro-Bold';
+left: 100px;
+font-size: 40px;
 } 
 
 header{
@@ -70,10 +87,10 @@ color: green;
 }
 
 .logo{
-   width: 233.75px;
-   height: 85px;
-   margin-left: 3%;
-   }
+width: 233.75px;
+height: 85px;
+margin-left: 3%;
+}
 
 .navbutton{
 height: 40px;
@@ -97,112 +114,88 @@ margin-left: 2%;
 background: green;
 }
 
-.ourinfocontainer{
-width:100%;
-display: flex;
-justify-content: space-between;
-padding: 0 5%;
-margin-top: 2%;
-padding-right: 5%;
-
-}
-.firsttxt{
-width: 100%;
-font-family:'daxlinepro-light' ;
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-color: #000000;
-padding: 10px;
-line-height: 41px;
+#greenquote{
+width: 30px;
 }
 
-.secondtxt{
-width: 100%;
-font-family:'daxlinepro-light' ;
-font-style: normal;
-font-weight: 400;
+.innerline{
+border: 4px solid ;
+color: #51DD11;
+width: 100%; 
+height: 710px;
+border-radius: 10px;
+position: absolute;
+bottom: -3%;
+left: 10%;
+z-index: -1;
+}
+
+.innerlinediv{
+width: 40%;
+position: relative;
+} 
+
+
+
+.infoh{
+color: green;
 font-size: 20px;
-line-height: 41px;
-padding: 10px;
-color: #000000;
+text-align: center;
+font-family: 'DaxlinePro-Bold';
+height: 100px;
+
+
+}
+#ola{
+width: 500px;
+margin-left: 75px;
+margin-top: 50px;
+}
+
+.textandtxt{
+width: 50%;
+position: relative;
+right: -620px;  
+bottom: 680px;
+}
+
+#schol{
+margin-top: 20px;
+margin-left: 25px;
+line-height: 50px;
+width: 500px;
+}
+
+#arroom{
+margin-top: 20px;
+margin-left: 25px;
+line-height: 50px;
+width: 500px;
 }
 
 .ourinfobtn{
-   color:white ;
-   background: #51DD11 ;
-   text-decoration: none;
-   font-weight: 700;
-   letter-spacing: 2px;
-   padding: 10px 20px; 
-   border-radius: 5px;
-   margin-left: 3%;
-   width: 30%;
-   height: 75vh;
+color:white ;
+background: #51DD11 ;
+text-decoration: none;
+padding: 10px 20px; 
+border-radius: 5px;
+margin-left: 3%;
+width: 20%;
+height: 7vh;
 }
    
-    .ourinfobtn:hover{
-       background: green;
-    }
-
-
-
-.textourinfo{
-text-align: center;
-font-family:'daxlinepro-light' ;
-font-style: normal;
-font-weight: 700;
-font-size: 40px;
-color: #51DD11;
-margin-bottom: 8%;
-padding: 3%;
+.ourinfobtn:hover{
+background: green;
 }
 
-.imgntxt img{
-   width: 100%;
+.infogeneral{
+height: 900px;
 }
 
 .infotxt{
   width: 40%; 
   height: 100vh;
 } 
-
-.ourinfodiv{
-   margin: 0 auto;
-   display: flex;
-   align-items: center;
-   justify-content: space-around; 
-}
-
-.infotxt h4{
-color: #FFFFFF;
-font-size: 35px;
-}
-
-.imgntxt{
-   width: 100%;
-   position: absolute;
-   top: 1%;
-   left:20% ;
-}
-
-.innerline{
-   border: 4px solid ;
-   color: #51DD11;
-   width: 100%; 
-   height: 95.5vh;
-   border-radius: 10px;
-   position: absolute;
-   bottom: 8%;
-   left: 10%;
-
-   
-}
-
-.innerlinediv{
-width: 40%;
-position: relative;
-}
 
 .itworks{
 background-color:rgba(81, 221, 17, 0.13);
@@ -513,7 +506,9 @@ transition: .5s;
    }
 
 .logo{
-   width: 40%;
+   width: 60%;
+   position: relative;
+   right: 70px;
 }
 
 .textforslider{
@@ -522,22 +517,97 @@ transition: .5s;
 }
 
 .logoandtext{
-   display: flex;
-   flex-direction: column;
-   align-items: flex-start;
-
+display: flex;
+flex-direction: column;
+align-items: flex-start;
 }
+
+.innerline{
+width: 100%; 
+height: 420px;
+bottom: 20%;
+left: 15%;
+z-index: -1;
+}
+
+.innerlinediv{
+width: 80%;
+position: relative;
+} 
+
+#ola{
+   width: 300px;
+   position:relative;
+   bottom: 98px;
+}
+
+.textandtxt{
+position: relative;
+top: 5px;
+}
+
+#schol{
+position: relative;
+bottom: 60px;
+margin-left: -600px;
+line-height: 25px;
+width: 360px;
+}
+
+#arroom{
+margin-left: -600px;
+line-height: 25px;
+width: 360px;
+position: relative;
+bottom: 60px;
+}
+
+/* .ourinfobtn{
+margin-left: 120%;
+width: 20%;
+}
+   
+.ourinfobtn:hover{
+background: green; 
+} */
+
+#greenquote{
+width: 20px;
+position: relative;
+right:600px;
+bottom: 60px;
+}
+
+iframe{
+position: relative;
+bottom: 64px;
+width: 90px;
+height:62px ;
+}
+
+.itworkstxt h4{
+position: relative;
+width: 332px;
+left: 30%;
+top: 50px;
+}
+
+.itworkstxt p{
+margin-left: 25%;
+}
+   
+   
+/* footer */
 footer{
    height: auto;
 }
 
-
 .secondlanediv{
-   display: flex;
-   flex-direction: column;
-   align-items: flex-start;
-   width: 100%;
-   padding-left: 10%;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+width: 100%;
+padding-left: 10%;
 }
 
 .abujadiv,.nairobidiv,.contactusdiv,.sierraleonediv{
