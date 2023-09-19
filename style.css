@@ -764,11 +764,11 @@ margin-bottom: -30px;
 
 #more_1,#more_2,#more_3 {
 display: none;
-font-size: 10px;
+font-size: 13px;
 color: black;
 }
 
-#myBtn_1,#myBtn_2,#myBtn_3{
+#myBtn_1,#myBtn_2,#myBtn_3,#myBtn_4,#myBtn_5,#myBtn_6{
 width: 84px;
 height: 24px;
 font-family:'daxlinepro-light';
